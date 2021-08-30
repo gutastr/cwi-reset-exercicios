@@ -1,4 +1,37 @@
+1.
 function imprimir(i) {
     console.log(i)
 }
 imprimir("Teste")
+
+2.1
+// Verifica se dois nomes são iguais.
+function mesmoNome(nome1, nome2) {
+    return nome1 == nome2
+}
+
+2.2
+//Verifica se a idade é de um adulto.
+function maiorDeIdade(idade) {
+    return idade >= 18
+}
+
+2.3
+//Calcula valor do boleto com juros de 10%.
+function valorComJuros(valorBoleto) {
+    return valorBoleto * 1.1
+}
+
+2.4
+// Calcula a média aritmética.
+function mediaAritmetica(itens) {
+    soma = 0
+
+    // soma os itens do array
+    for (index = 0; index < itens.length; index++) {
+        soma += itens[index]
+    }
+
+    // divide a soma pela quantidade de itens
+    return soma / itens.length
+}
