@@ -35,3 +35,14 @@ function mediaAritmetica(itens) {
     // divide a soma pela quantidade de itens
     return soma / itens.length
 }
+
+2.5
+/*
+Calcula a margem bruta com base na receita líquida e no custo dos produtos. 
+Multiplica o resultado por 100 para considerar o percentual. */
+
+ function margemBruta(receitaLiquidaDeVendas, custoProdutosVendidos) {
+    lucroBruto = receitaLiquidaDeVendas - custoProdutosVendidos
+    return (lucroBruto / receitaLiquidaDeVendas) * 100
+}
+
