@@ -1,0 +1,47 @@
+// Criação da classe Mario
+
+package poo.aula02;
+
+public class Mario {
+	
+	String nome;
+	String estatura;
+	String cabelo;
+	String roupa;
+	boolean bone;
+
+	public void imprimeCaracteristicas(){
+		System.out.println("Nome do personagem: " + nome);
+		System.out.println("Estatura: " + estatura);
+		System.out.println("Cabelo: " + cabelo);
+		System.out.println("Roupa: " + roupa);
+		System.out.println("Usa boné: " + bone);
+		}
+		
+	public void imprimePoderes() {
+		System.out.println("Poderes: Força, resistência e velocidade.");
+		
+	}
+}
+
+// instanciar objeto
+
+package poo.aula02;
+
+	public class Exercicio1 {
+
+	public static void main(String[] args) {
+		
+		Mario m1 = new Mario();
+        m1.nome = "Mario Bros";
+        m1.estatura = "baixo";
+        m1.cabelo = "castanho";
+        m1.roupa = "camiseta vermelha e macacão azul";
+        m1.bone = true;
+        
+        m1.imprimeCaracteristicas();
+        m1.imprimePoderes();
+
+	}
+
+}
