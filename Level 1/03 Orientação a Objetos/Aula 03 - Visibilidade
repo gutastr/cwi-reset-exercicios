@@ -1,0 +1,60 @@
+package poo.aula03;
+
+public class Mario {
+	
+	public String nome;
+	public String estatura;
+	private String cabelo;
+	private String roupa;
+	protected boolean bone;
+
+	public void imprimeCaracteristicas(){
+		System.out.println("Nome do personagem: " + nome);
+		System.out.println("Estatura: " + estatura);
+		System.out.println("Cabelo: " + cabelo);
+		System.out.println("Roupa: " + roupa);
+		System.out.println("Usa boné: " + bone);
+		}
+		
+	
+	protected void imprimePoderes() {
+		System.out.println("Poderes: Força, resistência e velocidade.");
+		
+	}
+}
+
+-------------------------------------------
+
+package poo.aula03;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+			
+			Mario m1 = new Mario();
+	        m1.nome = "Mario Bros";
+	        m1.estatura = "baixo";
+	      //  m1.cabelo = "castanho";
+	      //  m1.roupa = "camiseta vermelha e macacão azul";
+	        m1.bone = true;
+	        
+	        m1.imprimeCaracteristicas();
+	        m1.imprimePoderes();
+
+		}
+
+	}
+
+---------------------------------------
+Saída:
+  
+Nome do personagem: Mario Bros
+Estatura: baixo
+Cabelo: null
+Roupa: null
+Usa boné: true
+Poderes: Força, resistência e velocidade.
+
+
+
+
